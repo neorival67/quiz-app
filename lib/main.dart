@@ -6,5 +6,5 @@ void main() {
     home: Scaffold(body: StartScreen(),
       ),
     ),
-  );
+  ); //runApp
 }
