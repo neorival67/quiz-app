@@ -9,11 +9,13 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center, // Added for centering
         children: [
-          Image.asset(
+           Image.asset(
             'assets/images/quiz-logo.png',
             width: 300,
-            color: const Color.fromARGB(150, 255, 255, 255),
+            color: Color.fromARGB(150, 255, 255, 255),
           ),
+            
+          
           const SizedBox(height: 60),
           const Text(
             'Learn Flutter the Fun Way', 
@@ -23,12 +25,13 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),  // The missing comma was here
-          OutlinedButton(
+          OutlinedButton.icon(
             onPressed: () {},
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
             ), 
-            child: const Text('Start Quiz'),
+            icon: Icon(Icons.arrow_right_alt),
+            label: const Text('Start Quiz'),
           ),
         ],
       ),
